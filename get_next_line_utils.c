@@ -6,7 +6,7 @@
 /*   By: andpascu <andpascu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 14:17:18 by andpascu          #+#    #+#             */
-/*   Updated: 2026/09/24 18:10:22 by andpascu         ###   ########.fr       */
+/*   Updated: 2026/10/21 16:31:15 by andpascu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,18 +60,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	joined[i] = '\0';
 	return (joined);
 }
-
-/*
-** get_next_line.h
-**
-** Contiene los includes, BUFFER_SIZE y los prototipos
-** necesarios para el proyecto.
-**
-** BUFFER_SIZE:
-** Indica cuántos bytes intenta leer read() cada vez.
-** Puede cambiar al compilar con -D BUFFER_SIZE=n.
-**
-** get_next_line:
-** Recibe un file descriptor y devuelve una línea.
-** Devuelve NULL cuando no queda nada o hay un error.
-*/

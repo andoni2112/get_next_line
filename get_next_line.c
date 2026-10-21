@@ -6,7 +6,7 @@
 /*   By: andpascu <andpascu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 14:15:56 by andpascu          #+#    #+#             */
-/*   Updated: 2026/09/24 18:10:13 by andpascu         ###   ########.fr       */
+/*   Updated: 2026/10/21 16:31:36 by andpascu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,26 +101,3 @@ char	*get_next_line(int fd)
 	stash = ft_get_rest(stash);
 	return (line);
 }
-
-/*
-** get_next_line.c
-**
-** ft_read_file:
-** Lee del fd hasta encontrar '\n' o llegar a EOF.
-** Va acumulando lo leído en stash.
-**
-** ft_get_line:
-** Extrae desde stash la línea que se va a devolver.
-** Incluye '\n' si existe.
-**
-** ft_get_rest:
-** Guarda la parte que queda después de la línea.
-** Ese resto se usará en la siguiente llamada.
-**
-** get_next_line:
-** Coordina todo el proceso.
-** stash es static para conservar el sobrante entre llamadas.
-**
-** Flujo:
-** read -> acumular -> sacar línea -> guardar resto -> return
-*/
